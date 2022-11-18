@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="./favicon_io/apple-touch-icon.png">
+</head>
+<style>
+    @font-face {
+        font-family: sono-light;
+        src: url(./Fonts/static/Sono/Sono-Light.ttf);
+    }
+
+    @font-face {
+        font-family: bhutuka;
+        src: url(./Fonts/BhuTuka_Expanded_One/BhuTukaExpandedOne-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: dancing-regular;
+        src: url(./Fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: dancing-medium;
+        src: url(./Fonts/Dancing_Script/static/DancingScript-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: dancing-semibold;
+        src: url(./Fonts/Dancing_Script/static/DancingScript-SemiBold.ttf);
+    }
+
+    @font-face {
+        font-family: railway;
+        src: url(./Fonts/Raleway/static/Raleway-Thin.ttf);
+    }
+
+    @font-face {
+        font-family: railway-light;
+        src: url(./Fonts/Raleway/static/Raleway-Medium.ttf);
+    }
+
+
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        background-image: url(./pexels-pixabay-434337.jpg);
+        background-size: cover;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        font-family: sono-light;
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        text-decoration: none;
+        color: red;
+
+    }
+
+    .navbar {
+        background: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .form-section {
+        background: white;
+        width: 400px;
+        height: 480px;
+        box-sizing: border-box;
+        padding: 25px;
+        border: 3px solid black;
+        border-right: 3px solid red;
+        border-bottom: 3px solid yellow;
+        border-left: 3px solid green;
+        border-top: 3px solid blue;
+        margin: 30px 420px;
+        line-height: 1.5;
+    }
+
+    .form-section h1 {
+        color: red;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 0;
+        font-size: 40px;
+        font-family: dancing-medium;
+    }
+
+    label {
+        font-size: 24px;
+        color: rgb(64, 174, 218);
+        font-family: dancing-medium;
+    }
+
+    .form-section button {
+        background-color: white;
+        color: black;
+        border: 3px solid green;
+        border-radius: 6px;
+        padding: 8px 12px 8px 12px;
+        font-family: dancing-medium;
+        font-size: 15px;
+    }
+
+    .form-section button:hover {
+        background-color: green;
+        color: white;
+        transition: 0.4s;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="#lapi">Laptops</a>
+            <a href="#mobi">Mobiles</a>
+            <a href="./about.html">About</a>
+            <a href="./contact us.html">Contact</a>
+            <a href="./Signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <form>
+            <h1>Sign Up Form</h1>
+            <label for="a1">First Name:</label>
+            <input type="text" id="a1" required placeholder="Ex.John">
+            <br>
+            <label for="a1">Last Name:</label>
+            <input type="text" id="a1" required placeholder="Ex.wick">
+            <br>
+            <label for="a1">Email:</label>
+            <input type="text" id="a1" required placeholder="Ex.abc@gmail.com">
+            <br>
+            <label for="a1">Mobile:</label>
+            <input type="text" id="a1" required placeholder="Ex.9158611071" pattern="[789]{0-9}{9}">
+            <br>
+            <label for="a1">Password:</label>
+            <input type="text" id="a1" required placeholder="Ex.Password">
+            <br>
+            <label for="a1">Re-Password:</label>
+            <input type="text" id="a1" required placeholder="re-Password">
+            <div class="gender-button">
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label for="terms">I Accept all the terms & Conditions</label>
+            <br>
+            <br>
+            <button type="submit">Sign Up</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
